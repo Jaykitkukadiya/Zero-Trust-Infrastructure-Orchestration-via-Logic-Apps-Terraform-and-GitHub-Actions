@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "azurerm" {
-    resource_group_name  = "rg-terraform-state"
-    storage_account_name = "tfstate30806"    
-    container_name       = "tfstate"
-    key                  = "vdi.terraform.tfstate"
+    resource_group_name  = "rg-tXXXate"
+    storage_account_name = "XXXXXX"    
+    container_name       = "XXX"
+    key                  = "vdixXXXXxe"
   }
 }
 
@@ -115,7 +115,7 @@ resource "azurerm_windows_virtual_machine" "vdi_vm" {
   location            = azurerm_resource_group.vdi_rg[each.key].location
   
   size                  = "Standard_B2s"
-  admin_username        = "localadmin"
+  admin_username        = "XXXXXXn"
   admin_password        = var.vm_admin_password
   network_interface_ids =[azurerm_network_interface.vdi_nic[each.key].id]
 
@@ -151,7 +151,7 @@ resource "azurerm_virtual_machine_extension" "domain_join" {
   settings = <<SETTINGS
     {
         "Name": "lab.jaykit.local",
-        "User": "LAB\\Administrator01",
+        "User": "LAB\XXXXXXX",
         "Restart": "true",
         "Options": "3",
         "OUPath": "OU=VDI-Computers,DC=lab,DC=jaykit,DC=local"
