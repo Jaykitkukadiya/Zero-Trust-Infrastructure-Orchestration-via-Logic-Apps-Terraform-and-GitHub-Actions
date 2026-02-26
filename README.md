@@ -110,3 +110,4 @@ Moving beyond local Active Directory GPOs, the next phase will fully embrace Mic
 
 ### 3. NSG Traffic Hardening
 Modifying the dynamic NSG creation to restrict inbound RDP traffic (Port 3389) strictly to Azure VPN Gateways or trusted corporate IP ranges, deprecating the current `*` (any) allowance in `main.tf`.
+
