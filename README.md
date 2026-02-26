@@ -111,3 +111,5 @@ Moving beyond local Active Directory GPOs, the next phase will fully embrace Mic
 ### 3. NSG Traffic Hardening
 Modifying the dynamic NSG creation to restrict inbound RDP traffic (Port 3389) strictly to Azure VPN Gateways or trusted corporate IP ranges, deprecating the current `*` (any) allowance in `main.tf`.
 
+## Related Projects
+*   **[Part 1: Hybrid IAM across cloud and on-premises infrastructure](https://github.com/Jaykitkukadiya/Hybrid-IAM-across-cloud-and-on-premises-infrastructure)**: Documents the prerequisite infrastructure (Multi-Region Active Directory, Networking, and Entra Cloud Sync) that serves as the foundation for this automation engine.
